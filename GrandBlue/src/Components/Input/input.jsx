@@ -1,8 +1,8 @@
 import { InputComp } from "./style.jsx";
 
-export default function Input({type,placeholder}) {
+export default function Input({onChange, Id, Name, type, placeholder}) {
     return(
-        <InputComp type={type} placeholder={placeholder}></InputComp>
+        <InputComp  onChange={onChange} id={Id} name={Name} type={type} placeholder={placeholder}></InputComp>
     )
 }
 

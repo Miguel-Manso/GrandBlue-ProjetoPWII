@@ -3,7 +3,7 @@ import { poolConnect } from "../../poolConnect.js"
 const con = await poolConnect()
 
 export class Usuario{
-    constructor(email, senha, nome, cpf, id){
+    constructor(email, senha, nome, id){
         if(email == '' || email == null || email == undefined){
             this.email = ''
         }else{
@@ -20,11 +20,6 @@ export class Usuario{
             this.nome = ''
         }else{
             this.nome = nome
-        }
-        if( cpf == '' || cpf == null || cpf == undefined){
-            this.cpf = ''
-        }else{
-            this.cpf = cpf
         }
         if(id == '' || id == null || id == undefined){
             this.id = ''
@@ -47,7 +42,7 @@ export class Usuario{
 
     async insert(){
         try {
-            const { rowsAffected } = con.query(` insert into usuario values ('${this.nome}', '${this.email}', '${this.senha}', '${this.cpf}')`)
+            const { rowsAffected } = con.query(` insert into usuario values ('${this.nome}', '${this.email}', '${this.senha}')`)
             return rowsAffected
         } 
         catch (error) 
@@ -60,7 +55,7 @@ export class Usuario{
     async update(){
         try {
             const { rowsAffected } = await con.query(`update usuario set nome = '${this.nome}' , email = '${this.email}',
-            senha = '${this.senha}', cpf = '${this.cpf}' where id = ${this.id}`)
+            senha = '${this.senha}' where id = ${this.id}`)
             return rowsAffected
         } 
         catch (error) 
@@ -82,7 +77,21 @@ export class Usuario{
         }
     }
 
-
+    async login(){
+        try {
+            const { recordset } = await con.query(`SELECT email, senha, id FROM usuario 
+                WHERE email = '${this.email}' and senha = '${this.senha}'`)
+            if (recordset.length > 0)
+                return recordset
+            else
+                return false
+        } 
+        catch (error) 
+        {
+            console.log('Model error ' + error)
+            return error
+        }
+    }
 
 
 

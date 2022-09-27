@@ -16,8 +16,8 @@ export class UserController{
 
     static async insertUser(req, res){
         try {
-                const { email, senha, nome, cpf } = req.body
-                const newUser = await new Usuario(email, senha, nome, cpf).insert()
+                const { email, senha, nome } = req.body
+                const newUser = await new Usuario(email, senha, nome).insert()
                 return res.status(200).json(newUser)
         } 
         catch (error) 
@@ -30,8 +30,8 @@ export class UserController{
     static async updateUser(req, res){
         try {
                 const { id } = req.params
-                const { email, senha, nome, cpf } = req.body
-                const alterUser = await new Usuario(email, senha, nome, cpf, id).update()
+                const { email, senha, nome} = req.body
+                const alterUser = await new Usuario(email, senha, nome, id).update()
                 return res.status(200).json(alterUser)
         } 
         catch (error) 
@@ -44,14 +44,25 @@ export class UserController{
     static async deleteUser(req, res){
         try {
                 const { id } = req.params
-                const { email, senha, nome, cpf } = req.body
-                const delUser = await new Usuario(email, senha, nome, cpf, id).delete()
+                const { email, senha, nome } = req.body
+                const delUser = await new Usuario(email, senha, nome, id).delete()
                 return res.status(200).json(delUser)
         } 
         catch (error) 
         {
             console.log(error)
             return res.status(500).json(error)
+        }
+    }
+
+    static async loginUser(req, res){
+        try {
+            const { email, senha, nome } = req.body
+            const loginUser = await new Usuario(email, senha, nome).login()
+            return res.status(200).json(loginUser)
+        } 
+        catch (error) {
+            console.log('login ' + error)
         }
     }
 
