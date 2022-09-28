@@ -1,4 +1,4 @@
-import { ButtonLogin, ContainerLogin, InputLogin, LoginBox, ButtonCadastrar, TituloLogin, ImagemLogin, ParagraphLogin} from "./style.jsx"
+import { ButtonCadastro, ContainerCadastro, InputCadastro, CadastroBox, TituloCadastro, ButtonEntrar, ImagemCadastro, ParagraphCadastro} from "./style.jsx"
 import Logo from "../../Assets/grandblue.svg"
 import Input from "../../Components/Input/input.jsx"
 import Button from "../../Components/Button/button.jsx"
@@ -6,8 +6,7 @@ import Axios from 'axios'
 import { useState } from "react";
 
 
-
-export function Login(){
+export function Cadastro(){
 
     const[values, setValues] = useState();
     
@@ -19,7 +18,7 @@ export function Login(){
     };
 
     const HandleClickButton = () =>{
-        Axios.post("http://localhost:3001/usuario/login", {
+        Axios.post("http://localhost:3001/usuario/cadastro", {
                 email: values.email,
                 senha: values.senha
             }).then((response) =>{
@@ -32,29 +31,30 @@ export function Login(){
     }
 
     return(
-        <ContainerLogin>
-        <LoginBox>
+        <ContainerCadastro>
+        <CadastroBox>
 
-        <ImagemLogin src={Logo}> 
-        </ImagemLogin>
+        <ImagemCadastro src={Logo}> 
+        </ImagemCadastro>
 
-        <TituloLogin>Bem Vindo</TituloLogin>  
+        <TituloCadastro>Crie Sua Conta!</TituloCadastro>  
 
-        <InputLogin>
+        <InputCadastro>
             <Input onChange={HandleChangeValues} Id="email" Name="email" type="text" placeholder="Email"/>
             <Input onChange={HandleChangeValues} Id="senha" Name="senha" type="password" placeholder="Senha"/>
-        </InputLogin>
+        </InputCadastro>
 
-        <ButtonLogin>
-        <Button onClick={()=>HandleClickButton()} conteudo="Entrar" type="button"/>
-        <ParagraphLogin>Que Tal Criar Sua Conta?</ParagraphLogin>
-        </ButtonLogin>
-        <ButtonCadastrar>
-        <Button onClick={()=>HandleClickButton()} conteudo="Cadastre-se" estilo="1" type="button"/>
-        </ButtonCadastrar>
-      
+        <ButtonCadastro>
+        <Button onClick={()=>HandleClickButton()} conteudo="Cadastrar"  type="button"/>
+        <ParagraphCadastro>Já Tem Uma Conta?</ParagraphCadastro>
+        </ButtonCadastro>
+        
+        <ButtonEntrar>
+        <Button onClick={()=>HandleClickButton()} conteudo="Entre" estilo="1" type="button"/>
+        </ButtonEntrar>
+        
 
-        </LoginBox>
-        </ContainerLogin>
+        </CadastroBox>
+        </ContainerCadastro>
     )
 }

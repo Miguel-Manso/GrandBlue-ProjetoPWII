@@ -9,12 +9,12 @@ const InputComp = styled.input`
     padding: 1rem;
     border: none;
     outline: none;
-    color: #280606;
+    color: #280606b9;
     font-size: 1rem;
     font-weight: bold;
     &:focus {
         display: inline-block;
-        box-shadow: 0 0 0 0.2rem #59242482;
+        box-shadow: 0 0 0 0.2rem #4408081d;
         backdrop-filter: blur(12rem);
         border-radius: 2rem;
     }

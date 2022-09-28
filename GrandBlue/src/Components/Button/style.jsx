@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-const ButtonComp = styled.button`
-    background: linear-gradient(90deg, rgba(57,36,36,1) 0%, rgba(170,15,14,1) 30%, rgba(170,15,14,1) 50%, rgba(170,15,14,1) 70%, rgba(57,36,36,1) 100%);
-
-
+const ButtonCompBlue = styled.button`
+    background-color:#2DABD3;
     text-transform: uppercase;
     letter-spacing: 0.2 rem;
     width: 65%;
@@ -14,4 +12,17 @@ const ButtonComp = styled.button`
     cursor: pointer;
 `
 
-export {ButtonComp}
+const ButtonCompWhite = styled.button`
+    color: #2DABD3;
+    background-color:#ffffff;
+    border: 1px #212121 ;
+    text-transform: uppercase;
+    letter-spacing: 0.2 rem;
+    width: 65%;
+    height: 3rem;
+    border: none ;
+    border-radius: 2rem;
+    cursor: pointer;
+`
+
+export {ButtonCompWhite, ButtonCompBlue}

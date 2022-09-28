@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import img from '../../Assets/fundo.jpg'
+import img from '../../Assets/fundo-cadastro.jpg'
 
 
-const ContainerLogin = styled.div`
+const ContainerCadastro = styled.div`
     height: 100vh;
     width: 100vw;
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -16,7 +16,7 @@ const ContainerLogin = styled.div`
 
 `
 
-const LoginBox = styled.div`
+const CadastroBox = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,17 +32,18 @@ const LoginBox = styled.div`
     
   
 `
-const ImagemLogin = styled.img`
+const ImagemCadastro = styled.img`
     width: 12rem;
     height: 12rem;
+    
 `
 
-const TituloLogin = styled.h2`
+const TituloCadastro = styled.h2`
     margin: 2rem 0;
     margin-top: 0;
 `
 
-const InputLogin = styled.div`
+const InputCadastro = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -52,14 +53,25 @@ const InputLogin = styled.div`
     
 `
 
-const ParagraphLogin = styled.div`
+const ParagraphCadastro = styled.div`
     color: white;
     text-transform: uppercase;
     margin-top: 1rem;
 `
+const ButtonEntrar = styled.button`
 
-const ButtonLogin = styled.button`
-    margin: 1rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    
+`
+
+const ButtonCadastro = styled.button`
+    margin: 1rem ;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -69,17 +81,6 @@ const ButtonLogin = styled.button`
     background: none;
 `
 
-const ButtonCadastrar = styled.button`
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background: none;
-
-`
 
 
-
-export {ContainerLogin, LoginBox, TituloLogin, InputLogin, ButtonLogin, ImagemLogin, ParagraphLogin, ButtonCadastrar}
+export {ContainerCadastro, CadastroBox, TituloCadastro, InputCadastro, ButtonEntrar, ButtonCadastro, ImagemCadastro, ParagraphCadastro}
