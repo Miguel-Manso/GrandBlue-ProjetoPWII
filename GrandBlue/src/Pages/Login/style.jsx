@@ -67,16 +67,21 @@ const ButtonLogin = styled.button`
     justify-content: center;
     border: none;
     background: none;
+    text-decoration: none;
+    a { color: inherit; } 
 `
 
 const ButtonCadastrar = styled.button`
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: none;
     background: none;
+    text-decoration: none;
+    a { width: 60% } 
+    
 
 `
 

@@ -10,6 +10,9 @@ const ButtonCompBlue = styled.button`
     color: white;
     border-radius: 2rem;
     cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
+
 `
 
 const ButtonCompWhite = styled.button`
@@ -23,6 +26,8 @@ const ButtonCompWhite = styled.button`
     border: none ;
     border-radius: 2rem;
     cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
 `
 
 export {ButtonCompWhite, ButtonCompBlue}

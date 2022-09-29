@@ -60,7 +60,7 @@ const ParagraphCadastro = styled.div`
 `
 const ButtonEntrar = styled.button`
 
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

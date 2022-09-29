@@ -2,6 +2,7 @@ import { ButtonLogin, ContainerLogin, InputLogin, LoginBox, ButtonCadastrar, Tit
 import Logo from "../../Assets/grandblue.svg"
 import Input from "../../Components/Input/input.jsx"
 import Button from "../../Components/Button/button.jsx"
+import { Link } from "react-router-dom"
 import Axios from 'axios'
 import { useState } from "react";
 
@@ -35,8 +36,10 @@ export function Login(){
         <ContainerLogin>
         <LoginBox>
 
+        <Link to="/">
         <ImagemLogin src={Logo}> 
         </ImagemLogin>
+        </Link>
 
         <TituloLogin>Bem Vindo</TituloLogin>  
 
@@ -49,9 +52,11 @@ export function Login(){
         <Button onClick={()=>HandleClickButton()} conteudo="Entrar" type="button"/>
         <ParagraphLogin>Que Tal Criar Sua Conta?</ParagraphLogin>
         </ButtonLogin>
+        <Link to="/cadastro" style={{ textDecoration: 'none', display: 'flex',width: '60%', justifyContent: 'center' }} >
         <ButtonCadastrar>
-        <Button onClick={()=>HandleClickButton()} conteudo="Cadastre-se" estilo="1" type="button"/>
+        <Button onClick={()=>HandleClickButton()}conteudo="Cadastre-se" estilo="1" type="button"/>
         </ButtonCadastrar>
+        </Link>
       
 
         </LoginBox>

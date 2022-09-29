@@ -1,6 +1,7 @@
 import { ButtonCadastro, ContainerCadastro, InputCadastro, CadastroBox, TituloCadastro, ButtonEntrar, ImagemCadastro, ParagraphCadastro} from "./style.jsx"
 import Logo from "../../Assets/grandblue.svg"
 import Input from "../../Components/Input/input.jsx"
+import { Link } from "react-router-dom"
 import Button from "../../Components/Button/button.jsx"
 import Axios from 'axios'
 import { useState } from "react";
@@ -34,8 +35,10 @@ export function Cadastro(){
         <ContainerCadastro>
         <CadastroBox>
 
+        <Link to="/">
         <ImagemCadastro src={Logo}> 
         </ImagemCadastro>
+        </Link>
 
         <TituloCadastro>Crie Sua Conta!</TituloCadastro>  
 
@@ -49,9 +52,11 @@ export function Cadastro(){
         <ParagraphCadastro>Já Tem Uma Conta?</ParagraphCadastro>
         </ButtonCadastro>
         
+        <Link to="/login"  style={{ textDecoration: 'none', display: 'flex',width: '60%', justifyContent: 'center' }}>
         <ButtonEntrar>
         <Button onClick={()=>HandleClickButton()} conteudo="Entre" estilo="1" type="button"/>
         </ButtonEntrar>
+        </Link>
         
 
         </CadastroBox>
