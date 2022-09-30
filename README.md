@@ -1,9 +1,6 @@
-
-div align="center"
-img src="![grandblue](https://user-images.githubusercontent.com/8761915/193367660-fab6231d-70f8-429a-a607-799850432bb8.svg)"
-)
-" width="300px" / >
-/div
+<div align="center">
+<img src="![grandblue](https://user-images.githubusercontent.com/8761915/193367660-fab6231d-70f8-429a-a607-799850432bb8.svg)" width="0px" />
+</div>
 
 
 <h4 align="center"> 
