@@ -10,6 +10,7 @@
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-objetivos-e-Necessidades">Objetivos e Necessidades</a> •
+ <a href="#-colaboradores">Colaboradores</a> •
  <a href="#-ferramentas">Ferramentas</a> •
  <a href="#-comandos-utilizados">Comandos</a>
 </p>
@@ -28,6 +29,15 @@ CRUD, além do código em Nodejs + Express utilizando arquitetura MVC e POO
 • Criação do Servidor em Node.js <br/>
 • Estrutura MVC e POO<br/>
 • Vite e React <br/>
+
+---
+## 🤵 Colaboradores
+
+• Miguel-Manso <br/>
+• Leandro-Giacomini<br/>
+• Lucas-Spadoni <br/>
+• Ruan-Carlos <br/>
+• Matheus-Rocha <br/>
 
 ---
 ## ⚙ Ferramentas
