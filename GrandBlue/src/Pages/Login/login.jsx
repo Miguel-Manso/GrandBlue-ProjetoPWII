@@ -49,7 +49,7 @@ export function Login(){
         </InputLogin>
 
         <ButtonLogin>
-        <Button onClick={()=>HandleClickButton()} conteudo="Entrar" type="button"/>
+        <Button onClick={()=>HandleClickButton()} conteudo="Entrar" estilo="2" type="button"/>
         <ParagraphLogin>Que Tal Criar Sua Conta?</ParagraphLogin>
         </ButtonLogin>
         <Link to="/cadastro" style={{ textDecoration: 'none', display: 'flex',width: '60%', justifyContent: 'center' }} >

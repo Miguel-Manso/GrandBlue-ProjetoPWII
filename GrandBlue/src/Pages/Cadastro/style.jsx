@@ -50,6 +50,7 @@ const InputCadastro = styled.div`
     align-items: center;
     height: 20%;
     width: 100%;
+    gap: 7%;
     
 `
 
@@ -59,7 +60,7 @@ const ParagraphCadastro = styled.div`
     margin-top: 1rem;
 `
 const ButtonEntrar = styled.button`
-
+    margin-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -67,11 +68,12 @@ const ButtonEntrar = styled.button`
     justify-content: center;
     border: none;
     background: none;
+
     
 `
 
 const ButtonCadastro = styled.button`
-    margin: 1rem ;
+    margin: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;

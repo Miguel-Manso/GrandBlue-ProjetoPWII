@@ -2,24 +2,25 @@ import styled from "styled-components"
 import banner from "../../Assets/Banner.png"
 
 const Container = styled.div`
-    display: flex;
+    display: block;
+    overflow: auto;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #414141;
-    height: 100vh;
-   
+    height: 100%;
+
 `;
 const Secao = styled.div`
-
+    
     display: flex;
     justify-content:center;
     align-items:center;
     align-content:center;
-    height:70%;
-    width:100%;
+    width: 100%;
+    height: 88%;
     background-image: url(${banner});
     background-size: cover;
-    
     box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.1);
 
 `;
@@ -34,7 +35,7 @@ const Titulos = styled.div`
 
 `;
 const Paragrafos = styled.div`
-
+    
     display:flex;   
     gap: 25px;
     justify-items: center;

@@ -1,4 +1,5 @@
 import { Navbar } from "../../Components/Navbar/navbar.jsx"
+import { Users } from "../../Components/Users/users.jsx"
 import { Container, Paragrafo, Paragrafos, Secao, Titulo, Titulos, Texto} from "./style.jsx"
 
 
@@ -7,6 +8,7 @@ export function Home () {
         
         <Container>
             <Navbar />
+            
             <Secao>
                 <Titulos>
                     <Titulo>Bem-vindo à Grand Blue</Titulo>
@@ -16,19 +18,17 @@ export function Home () {
             </Secao>
                     <Paragrafos>
                         <Texto>
-                        O mergulho é definido como o ato de submergir dentro d'água que pode ser praticado 
-                        de forma independente e livre, apenas controlando a respiração, como também de modo 
-                        dependente, semi-dependente e autônomo, com a ajuda de um aparelho de respiração.
+                        O mergulho é a atividade de submergir dentro da d'água que pode ser praticado com ou sem o
+                        auxílio de um aparelho de respiração. Ele pode ser realizado de forma autônoma, livre 
+                        (controlando a respiração) ou dependente. 
                         </Texto>
                         <Texto>
-                        O mergulho, modalidade desportiva aquática praticada desde tempos antigos, 
-                        está dividido em dois tipos: um que é feito em piscinas, a partir de pranchas 
-                        e trampolins e cujo objetivo é realizar acrobacias, pontuadas por juízes, 
-                        antes da entrada na água
+                        Infelizmente o homem não tem a capacidade de sobreviver em ambiente aquático. Para superar 
+                        essa limitação, foram desenvolvidas técnicas denominadas de mergulho, que tal entrar na Grand Blue.
                         </Texto>
                     </Paragrafos>
                 
-                
+                    <Users />
         </Container>
     )
 }

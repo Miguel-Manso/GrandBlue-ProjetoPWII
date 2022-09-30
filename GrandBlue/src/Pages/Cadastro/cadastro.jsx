@@ -43,20 +43,22 @@ export function Cadastro(){
         <TituloCadastro>Crie Sua Conta!</TituloCadastro>  
 
         <InputCadastro>
+            <Input onChange={HandleChangeValues} Id="nome" Name="nome" type="text" placeholder="Nome"/>
             <Input onChange={HandleChangeValues} Id="email" Name="email" type="text" placeholder="Email"/>
             <Input onChange={HandleChangeValues} Id="senha" Name="senha" type="password" placeholder="Senha"/>
         </InputCadastro>
 
         <ButtonCadastro>
-        <Button onClick={()=>HandleClickButton()} conteudo="Cadastrar"  type="button"/>
+        <Button onClick={()=>HandleClickButton()} conteudo="Cadastrar" estilo="2" type="button"/>
         <ParagraphCadastro>Já Tem Uma Conta?</ParagraphCadastro>
-        </ButtonCadastro>
-        
         <Link to="/login"  style={{ textDecoration: 'none', display: 'flex',width: '60%', justifyContent: 'center' }}>
         <ButtonEntrar>
         <Button onClick={()=>HandleClickButton()} conteudo="Entre" estilo="1" type="button"/>
         </ButtonEntrar>
         </Link>
+        </ButtonCadastro>
+        
+       
         
 
         </CadastroBox>
