@@ -1,3 +1,9 @@
+div align="center"
+img src="(https://user-images.githubusercontent.com/8761915/193367660-fab6231d-70f8-429a-a607-799850432bb8.svg)
+" width="300px" /
+/div
+
+
 <h4 align="center"> 
 	🐋 Grand Blue 🐳
 </h4>
