@@ -2,7 +2,7 @@ import { ButtonLogin, ContainerLogin, InputLogin, LoginBox, ButtonCadastrar, Tit
 import Logo from "../../Assets/grandblue.svg"
 import Input from "../../Components/Input/input.jsx"
 import Button from "../../Components/Button/button.jsx"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Axios from 'axios'
 import { useState } from "react";
 
@@ -18,6 +18,7 @@ export function Login(){
             [value.target.name]: value.target.value,
         }))
     };
+    const navigate = useNavigate()
 
     const HandleClickButton = () =>{
         Axios.post("http://localhost:3001/usuario/login", {
@@ -26,8 +27,7 @@ export function Login(){
             }).then((response) =>{
                 console.log(response)
                 if (values.email == response.data[0].email && values.senha ==  response.data[0].senha){
-                //  navigate('/generos', {replace: true})
-                console.log('deu certo')
+                  navigate('/', {replace: true})
                 }
             })
     }
@@ -54,7 +54,7 @@ export function Login(){
         </ButtonLogin>
         <Link to="/cadastro" style={{ textDecoration: 'none', display: 'flex',width: '60%', justifyContent: 'center' }} >
         <ButtonCadastrar>
-        <Button onClick={()=>HandleClickButton()}conteudo="Cadastre-se" estilo="1" type="button"/>
+        <Button conteudo="Cadastre-se" estilo="1" type="button"/>
         </ButtonCadastrar>
         </Link>
       

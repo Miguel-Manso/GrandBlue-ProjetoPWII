@@ -10,6 +10,8 @@ import { Cadastro } from './Pages/Cadastro/cadastro.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
+
   <React.StrictMode>
     <Router>
       <Routes>
@@ -22,6 +24,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </Router>
 
     <GlobalStyle />
-    
   </React.StrictMode>
 )

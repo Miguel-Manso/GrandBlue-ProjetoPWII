@@ -1,7 +1,7 @@
 import { ButtonCadastro, ContainerCadastro, InputCadastro, CadastroBox, TituloCadastro, ButtonEntrar, ImagemCadastro, ParagraphCadastro} from "./style.jsx"
 import Logo from "../../Assets/grandblue.svg"
 import Input from "../../Components/Input/input.jsx"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Button from "../../Components/Button/button.jsx"
 import Axios from 'axios'
 import { useState } from "react";
@@ -10,7 +10,7 @@ import { useState } from "react";
 export function Cadastro(){
 
     const[values, setValues] = useState();
-    
+    const navigate = useNavigate()
     const HandleChangeValues = (value) =>{
         setValues(prevValue =>({
             ...prevValue,
@@ -19,16 +19,13 @@ export function Cadastro(){
     };
 
     const HandleClickButton = () =>{
-        Axios.post("http://localhost:3001/usuario/cadastro", {
+        Axios.post("http://localhost:3001/usuario/insert", {
                 email: values.email,
-                senha: values.senha
-            }).then((response) =>{
-                console.log(response)
-                if (values.email == response.data[0].email && values.senha ==  response.data[0].senha){
-                //  navigate('/generos', {replace: true})
-                console.log('deu certo')
-                }
-            })
+                senha: values.senha,
+                nome: values.nome
+                
+                
+            }).then(navigate('/login', {replace: true}))
     }
 
     return(

@@ -1,23 +1,23 @@
 import { ButtonCompAlter, ButtonCompBlue, ButtonCompDelete, ButtonCompWhite } from "./style.jsx";
 
-export default function Button({conteudo, estilo}) { 
+export default function Button({onClick, conteudo, estilo}) { 
         if (estilo == 1){
             return(
-                <ButtonCompBlue>{conteudo}</ButtonCompBlue>
+                <ButtonCompBlue onClick={onClick}>{conteudo}</ButtonCompBlue>
             )
 
         } else if (estilo == 2){
             return(
-                <ButtonCompWhite>{conteudo}</ButtonCompWhite>)
+                <ButtonCompWhite onClick={onClick}>{conteudo}</ButtonCompWhite>)
 
          } if (estilo == 3){
             return(
-                <ButtonCompDelete>{conteudo}</ButtonCompDelete>
+                <ButtonCompDelete onClick={onClick}>{conteudo}</ButtonCompDelete>
             )
 
         }else {
             return(
-                <ButtonCompAlter>{conteudo}</ButtonCompAlter>)
+                <ButtonCompAlter onClick={onClick}>{conteudo}</ButtonCompAlter>)
 
          }
        
