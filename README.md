@@ -33,7 +33,7 @@ CRUD, além do código em Nodejs + Express utilizando arquitetura MVC e POO
 ---
 ## 🤵 Colaboradores
 
-• Miguel-Manso <br/>
+• Miguel-Manso (SM)<br/>
 • Leandro-Giacomini<br/>
 • Lucas-Spadoni <br/>
 • Ruan-Carlos <br/>
