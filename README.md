@@ -1,10 +1,10 @@
 <h4 align="center"> 
-	🚧  Crud Em Andamento... 🚧
+	🐋 Grand Blue 🐳
 </h4>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-objetivo">Objetivo</a> •
+ <a href="#-objetivos-e-Necessidades">Objetivos e Necessidades</a> •
  <a href="#-ferramentas">Ferramentas</a> •
  <a href="#-comandos-utilizados">Comandos</a>
 </p>
