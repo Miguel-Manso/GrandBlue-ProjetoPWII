@@ -17,7 +17,7 @@
 
 ## 💻 Sobre o Projeto
 
-Grand Blue é um site de mergulho fíctício produzido para o trabalho do professor Bruno, na Etec Bebedouro Idio Zucchi.
+Grand Blue é um site de mergulho fictício produzido para o trabalho do professor Bruno, na Etec Bebedouro Idio Zucchi.
 <br/>
 
 O Projeto se deu inicio em 20/09/2022, e se fazia necessário o código em React JS utilizando Vite como ambiente de desenvolvimento, e que continha as telas de um 
