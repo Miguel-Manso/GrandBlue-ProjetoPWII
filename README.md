@@ -58,3 +58,4 @@ CRUD, além do código em Nodejs + Express utilizando arquitetura MVC e POO
 • react-router-dom <br/>
 
 ---
+• Modelo original de readme por Vitor-Bellini

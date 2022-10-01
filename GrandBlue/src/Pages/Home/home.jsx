@@ -1,3 +1,4 @@
+import { Footer } from "../../Components/Footer/footer.jsx"
 import { Navbar } from "../../Components/Navbar/navbar.jsx"
 import { Users } from "../../Components/Users/users.jsx"
 import { Container, Paragrafo, Paragrafos, Secao, Titulo, Titulos, Texto} from "./style.jsx"
@@ -5,7 +6,7 @@ import { Container, Paragrafo, Paragrafos, Secao, Titulo, Titulos, Texto} from "
 
 export function Home () {
     return (
-        
+<>
         <Container>
             <Navbar />
             
@@ -29,6 +30,8 @@ export function Home () {
                     </Paragrafos>
                 
                     <Users />
+                    <Footer />
         </Container>
+</>
     )
 }

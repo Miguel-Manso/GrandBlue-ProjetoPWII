@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const UsersContainer = styled.div`
-    display: flex;
     overflow: auto;
     justify-content: center;
     align-items: center;
+    display: flex;
+    position: relative;
     
 `
 
@@ -13,7 +14,7 @@ const UsersBox = styled.div `
     align-items: center;
     flex-direction: column;
     height: 80vh;
-    width: 30vw;
+    min-width: 30vw;
     background-color: #ffffffcf;
     box-shadow: 0 8px 32px 0 #000000bb;
     backdrop-filter: blur(8.5px);
@@ -21,6 +22,7 @@ const UsersBox = styled.div `
     color: black;
     text-transform: uppercase;
     margin: 3%;
+    
 
 `
 
@@ -28,6 +30,7 @@ const TituloUsers = styled.h2`
     margin: 2rem 0;
     margin-top: 8%;
     letter-spacing: 0.4rem;
+    
 `
 const InputUsers = styled.div`
     display: flex;

@@ -1,8 +1,8 @@
 export const db = {
-    server: 'DESKTOP-7C99J2K',
+    server: 'localhost',
     port: 1433,
     user:'sa',
-    password:'0192',
+    password:'capeta',
     database:'grandblue', 
     options:{
         enableArithAbort: true,

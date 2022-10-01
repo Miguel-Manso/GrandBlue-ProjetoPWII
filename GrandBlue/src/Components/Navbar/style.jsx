@@ -40,10 +40,11 @@ const Nav = styled.div`
   align-items: center;
   flex-wrap: wrap;
   background: white;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  position: fixed;
+  z-index: 9999;
 `;
 const ImagemNav = styled.img`
     width: fit-content;
