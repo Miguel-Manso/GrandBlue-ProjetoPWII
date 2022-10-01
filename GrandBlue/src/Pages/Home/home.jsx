@@ -25,7 +25,7 @@ export function Home () {
                         </Texto>
                         <Texto>
                         Infelizmente o homem não tem a capacidade de sobreviver em ambiente aquático. Para superar 
-                        essa limitação, foram desenvolvidas técnicas denominadas de mergulho, que tal entrar na Grand Blue.
+                        essa limitação, foram desenvolvidas técnicas denominadas de mergulho, que tal entrar na Grand Blue?
                         </Texto>
                     </Paragrafos>
                 
